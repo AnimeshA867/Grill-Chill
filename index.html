@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <link rel="shortcut icon" type="x-icon" href="./assets/favicon.svg"> -->
+    <title> Grill and Chill - Best Food In The Town</title>
+
+     <!-- PRIMARY META TAGS -->
+     <meta name="title" content="GRILL AND CHILL | Enjoy Best Food At Affordable Price">
+     <meta name="description" content="GRILL AND CHILL is the best place to enjoy delicious food at affordable price. We are serving the best food in the town.">
+     <meta name="keywords" content="GRILL AND CHILL, Best Food, Affordable Price, Delicious Food, Best Place, Best Food in the town">
+     <meta name="author" content="GRILL AND CHILL">
+
+     <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    
+    <!-- BOXICON LINK -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- IONICONS LINK -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!-- CSS LINK  -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <!-- PRELOADER SECTION BANAUNA BAKI XA HAII -->
+
+    <!-- TOP BAR -->
+    <div class="hidden md:flex lg:flex top-bar p-3 bg-[#292626] w-full justify-between font-poppins text-white lg:text-sm text-xs">
+        <div class="topBar-left flex gap-[20px]">
+            <div class="location">
+                <i class='bx bxs-map'></i> 
+                <span><a href="#">Kumaripati, Lalitpur, Nepal</a></span>
+            </div> 
+            <span class="border-0 h-5 w-[2px] bg-zinc-500"></span>
+            <div class="time">
+            <i class='bx bxs-time' ></i>
+            <span>Daily: 8:00am to 10:00pm</span>
+            </div>
+        </div>
+    
+        <div class="topBar-right flex gap-[20px]">
+            <div class="phone">
+                <i class='bx bxs-phone' ></i>
+                <span><a href="tel:+9779815092222">+9779815092222</a></span>
+            </div>
+            <span class="border-0 h-5 w-[2px] bg-zinc-500"></span>
+            <div class="email">
+                <i class='bx bxs-envelope' ></i>
+                <span><a href="mailto:info@grillchill.com">info@grillchill.com</a>
+                </div>
+            </div>
+    </div>
+    <div class="border-0 h-[2px] w-full bg-zinc-500"></div>
+
+    <!-- HEADER SECTION -->
+    <div class="header font-poppins bg-[#292626]">
+        <nav class="p-4 flex justify-between items-center">
+            <div>
+                <img class="lg:w-72 w-44 md:w-36" src="./assets/logo.png" alt="logo">
+            </div>
+            <div class="z-20 transition duration-500 ease-in-out navLinks md:static md:w-auto absolute bg-[#292626] h-[90%] left-0 top-[-100%] w-full flex items-start px-5">
+                <ul class="mt-8 md:mt-0 flex md:flex-row flex-col gap-10 lg:text-[16px] text-[16px] md:text-[12px] md:gap-5 lg:gap-14 font-semibold tracking-widest text-white">
+                    <li><a class="active-link md:text-[#e4c590]" href="#home">Home</a></li>
+                    <li><a class="custom-hover-focus focus-visible:text-[#e4c590] hover:text-[#e4c590] transition duration-300 ease-in-out" href="#about">About</a></li>
+                    <li><a class="custom-hover-focus focus-visible:text-[#e4c590] hover:text-[#e4c590] transition duration-300 ease-in-out" href="#menu">Menu</a></li>
+                    <li><a class="custom-hover-focus focus-visible:text-[#e4c590] hover:text-[#e4c590] transition duration-300 ease-in-out" href="#service">Service</a></li>
+                    <li><a class="custom-hover-focus focus-visible:text-[#e4c590] hover:text-[#e4c590] transition duration-300 ease-in-out" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-3">
+                <button class="find-table hidden md:block h-8 w-24 text-[12px] hover:bg-[#292626] transition duration-500 ease-in-out hover:text-white border-2 border-[#e4c590] border-solid bg-[#e4c590] lg:h-12 lg:w-40 text-black tracking-wider lg:text-[14px] md:text-[10px] font-black">FIND A TABLE</button>
+                <ion-icon onclick="toggleMenu(this)" name="menu" class="text-[#e4c590] text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>    
+    </div>    
+
+
+    <!-- JAVASCRIPT LINK  -->
+    <script src="script.js"></script>
+
+</body>
+</html>
