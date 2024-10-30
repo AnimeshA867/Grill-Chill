@@ -61,3 +61,14 @@ document.querySelector('.home_menu').addEventListener('click', function(){
     });
 });
 
+// Find Table Button Event 
+
+document.querySelectorAll('.find-table').forEach(function(button) {
+    button.addEventListener('click', function() {
+        document.querySelector('#contact').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
