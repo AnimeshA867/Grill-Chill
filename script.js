@@ -53,3 +53,11 @@ setInterval(function() {
     slideImage();
 }, 4000);
 
+// View Menu Button Event
+
+document.querySelector('.home_menu').addEventListener('click', function(){
+    document.querySelector('#menu').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
