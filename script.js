@@ -72,3 +72,47 @@ document.querySelectorAll('.find-table').forEach(function(button) {
 });
 
 
+//Form Submission 
+
+function validateForm() {
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const persons = document.getElementById('persons').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const message = document.getElementById('message').value;
+
+    if (name === '') {
+        alert('Name is required.');
+        return false;
+    }
+
+    const phonePattern = /^[0-9]{10}$/;
+    if (!phonePattern.test(phone)) {
+        alert('Please enter a valid 10-digit phone number.');
+        return false;
+    }
+
+    if (persons === '') {
+        alert('Please select the number of persons.');
+        return false;
+    }
+
+    if (date === '') {
+        alert('Please select a date.');
+        return false;
+    }
+
+    if (time === '') {
+        alert('Please select a time.');
+        return false;
+    }
+
+    if (message === '') {
+        alert('Please enter a message.');
+        return false;
+    }
+
+    alert('Form submitted successfully!');
+    return true;
+}
